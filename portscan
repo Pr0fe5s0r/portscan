@@ -1,9 +1,9 @@
 #!/bin/bash
 #portscan v0.1
 
-while getopts i: flag #Get the user input
+while getopts i: inputs #Get the user input
 do
-    case "${flag}" in
+    case "${inputs}" in
         i) ipadd=${OPTARG};;
     esac
 done
